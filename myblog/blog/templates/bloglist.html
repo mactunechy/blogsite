@@ -1,0 +1,31 @@
+{% extends 'base.html'%} {% load static %}{% block content%} {% for blog in bloglist %}
+<div class="card pr-4 pl-4 pt-4 pb-4 mb-4" style="box-shadow: 7px 7px 3px #aaaaaa ">
+    <div>
+        <img src="{{ blog.image.url}}" alt="" class="img-responsive" style="width:100%;height:auto">
+    </div>
+    <h2  id="">{{blog.title}}</h2>
+    <span style="color:#3d85c6"><i class="fa fa-pencil" style = "color:grey"></i>&nbsp;by Dellan &nbsp; &nbsp; | <i class="fa fa-clock-o" style = "color:grey"></i> published on {{blog.pub_date|date:"D d M Y"}}|</span>
+    <hr>
+    <p>{{blog.content|truncatewords:'30'}}</p>
+    <p><a href="{{blog.pk}}" class="text-default btn btn-primary br-0">Read more</a> </p>
+</div>
+{% endfor%} {% endblock%} {% block header%}
+
+<div class="mb-8" style="height:360px">
+
+    <div style="height:70px"></div>
+
+    <div class="row ">
+       
+        <div class="col-md-1"></div>
+        <div class="col-md-10 pl-4 jumbotron" style=" background-size:cover ;text-align:center;background-image:url('{% static 'img/header.JPG' %}');color:white; ">
+            <h1 id="" style="font-size:3em">Hi, I am a web developer</h1>
+            <p style="font-size:1.2em">My name is Dellan Muchengapadare and i am a pythonia who builds web applications with django</p>
+            <button class="btn btn-primary" style = "width:150px;border:solid 1px black">What i do</button>
+        </div>
+        <div class="col-md-1"></div>
+        
+    </div>
+</div>
+<div style="height:50px"></div>
+{% endblock%}

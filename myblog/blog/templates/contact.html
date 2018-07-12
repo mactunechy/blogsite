@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags%}
+
+{% block content %}
+
+<form id="" action="" method="POST" accept-charset="utf-8">
+    {% csrf_token%}
+    {{form|crispy}}
+    <input type="submit" name="Send message" id="Send message" value="Send message" />
+    
+</form>
+
+{% endblock%}
