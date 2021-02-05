@@ -1,14 +1,14 @@
 # A Dynamic and Backend data driven blog in PYTHON and DJANGO
-***
-### Features
-..* Admin authentication 
-..* posting
-..* saving drafts
-..* publishing 
-..* likes 
-..* views 
-..* comments 
-..* Approve comments 
+
+## Features
+1. Admin authentication 
+2. posting
+3. saving drafts
+4. publishing 
+5. likes 
+6. views 
+7. comments 
+8. Approve comments 
 
 #### Admin Authentication 
 login to access posting and approving comments abilities 
